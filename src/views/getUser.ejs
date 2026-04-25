@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <td>Email</td>
+            <td>First name</td>
+            <td>Last name</td>
+            <td>Address</td>
+            <td>Role</td>
+            <td>Action</td>
+        </thead>
+        <% for (let i=0; i < data.length; i++) { %>
+            <tr>
+                <td>
+                    <%= data[i].email %>
+                </td>
+                <td>
+                    <%= data[i].firstName %>
+                </td>
+                <td>
+                    <%= data[i].address %>
+                </td>
+                <td>
+                    <%= data[i].phoneNumber %>
+                </td>
+                <td>
+                    <%= data[i].roleId %>
+                </td>
+                <td>
+                    <a href="/edit-user?id=<%= data[i].id %>" type="button">Edit</a>
+                    <a href="/delete-user?id=<%= data[i].id %>" type="button">Delete</a>
+                </td>
+            <tr>
+                <%}%>
+    </table>
+
+
+</body>
+
+</html>
