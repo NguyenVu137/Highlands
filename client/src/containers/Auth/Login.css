@@ -1,0 +1,31 @@
+.login-box {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px; }
+
+.login-btn {
+  background: #d8cec2;
+  border: none;
+  border-radius: 50px;
+  color: red;
+  font-size: 32px;
+  padding: 12px;
+  width: 100%; }
+
+.login-btn:hover {
+  background: #cfc3b4; }
+
+.social-btn {
+  width: 130px;
+  color: white;
+  border: none;
+  padding: 10px; }
+
+.facebook {
+  background: #3b5998; }
+
+.google {
+  background: #db4437; }
+
+/*# sourceMappingURL=Login.css.map */
